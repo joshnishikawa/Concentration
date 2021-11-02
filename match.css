@@ -1,0 +1,137 @@
+body{
+  font-family: Arial, Helvetica, sans-serif; 
+}
+
+/*BACKGROUND COLORS///////////////////////////////////////////////////////////*/
+.red{
+  background-color: #e00;
+  background-image: -webkit-linear-gradient(left top, Red, FireBrick);
+}
+.orange{
+  background-color: DarkOrange;
+  background-image: -webkit-linear-gradient(left top, Orange, DarkOrange);
+}
+.yellow{
+  background-color: Yellow;
+  background-image: -webkit-linear-gradient(left top, Yellow, Gold);
+}
+.green{
+  background-color: LimeGreen;
+  background-image: -webkit-linear-gradient(left top, Green 30%, DarkGreen 70%);
+}
+.blue{
+  background-color: #00e;
+  background-image: -webkit-linear-gradient(left top, #00e 30%, DarkBlue 70%);
+}
+.purple{
+  background-color: Purple;
+  background-image: -webkit-linear-gradient(left top, DarkViolet, Purple);
+}
+.black{background-color: Black;}
+.white{background-color: White;}
+.gray{background-color: #999;}
+.pink{
+  background-color: HotPink;
+  background-image: -webkit-linear-gradient(left top, Pink, HotPink);
+ }
+.brown{
+  background-color: SaddleBrown;
+  background-image: -webkit-linear-gradient(left top, Sienna, SaddleBrown);
+}
+.violet{
+  background-color: #c9f;
+  background-image: -webkit-linear-gradient(left top, #c9f, #c6f);
+}
+.silver{
+  background-color: #ccc;
+  background-image: -webkit-linear-gradient(
+  left top, Gray, White 10%, #ccc 35%, white 57%, White 60%, Gray);}
+.gold{
+  background-color: GoldenRod;
+  background-image: -webkit-linear-gradient(
+  left top, GoldenRod, white 27%, White 30%, Gold 65%, White 90%, GoldenRod);
+}
+.lightBlue{background-color: LightSkyBlue;
+  background-image: -webkit-linear-gradient(left top, Cyan, PaleTurquoise);
+}
+.lightGreen{background-color: LimeGreen;
+  background-image: -webkit-linear-gradient(left top, GreenYellow, SpringGreen);
+}
+.lightBrown{background-color: SandyBrown;
+  background-image: -webkit-linear-gradient(left top, Tan, BurlyWood);
+}
+.darkBlue{background-color: DarkBlue;}
+.darkGreen{ background-color: DarkGreen;}
+.darkBrown{background-color: SaddleBrown;}
+
+/*TEXT COLORS/////////////////////////////////////////////////////////////////*/
+.redText{color:Red;}
+.orangeText{color:Orange;}
+.yellowText{color:Yellow;}
+.greenText{color:DarkGreen;}
+.blueText{color:SlateBlue;}
+.purpleText{color:Purple;}
+.blackText{color:Black;}
+.whiteText{-webkit-text-stroke: 2px Gray;
+  color:White;
+}
+.grayText{color:#999;}
+.pinkText{color:Pink;}
+.brownText{color:SaddleBrown;}
+
+.match-content{
+  color:SlateBlue;
+  font-weight:bold;
+  text-shadow: 
+    -1px -1px 0 #666,
+    1px -1px 0 #666,
+    -1px 1px 0 #666,
+    1px 1px 0 #666; 
+  height: 100vh;
+  font-size: 17vh;
+  line-height:20vh;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10+ and Edge */
+  user-select: none; /* Standard syntax */
+}
+
+.card{
+  cursor:pointer;
+}
+
+.img-flash{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  max-width: 100%;
+}
+
+.cardface{
+  position:relative;
+  height: 20vh; /* because there are 4 rows of cards */
+  overflow:hidden;
+}
+
+.cardback{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  visibility:visible;
+  overflow:hidden;
+}
+
+.hide{
+  visibility:hidden;
+}
+
+.spinit {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}

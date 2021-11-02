@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Concentration</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./match.css">
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="form-group d-flex mb-0 mx-0">
+      <select class="form-control" id="deckname" name="deckname" 
+              onChange="setDeck(this.value);blur();" required>
+        <option value="" disabled selected>Choose a Set</option>
+        <option value="1~4">1~4</option>
+        <option value="5~10">5~10</option>
+        <option value="animals 1">animals 1</option>
+        <option value="animals 2">animals 2</option>
+        <option value="letters 1">letters 1</option>
+        <option value="letters 2">letters 2</option>
+        <option value="shapes">shapes</option>
+        <option value="weekdays">weekdays</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-10">
+      <div class="match-content" id="match-content"></div>
+    </div>
+  </div>
+</div>
+
+<script src="./match.js"></script>
+</body>
+</html>
