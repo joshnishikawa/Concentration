@@ -15,7 +15,7 @@ var letter = ['b','d','f','g','k','m','p','r','s','t',
 var animal = ['bear', 'dog', 'fish', 'goat', 'kangaroo', 
               'monkey', 'pig', 'rabbit', 'snake', 'tiger', 
               'bat','duck','frog', 'gorilla', 'koala', 
-              'mouse', 'penguin', 'rat', 'seal', 'turtle'];
+              'mouse', 'penguin', 'raccoon', 'seal', 'turtle'];
 
 var vocab = ['car','cat','hat','horse','jelly','juice',
              'lemon','lion','net','nail','question','quilt',
@@ -44,15 +44,15 @@ function setDeck(d){
 
     case 'animals 1':
       for (let i = 0; i < 10; i++){
-        deck.push(`<img class="img-flash mx-auto d-block" src="image/${animal[i]}.png">`);
-        deck.push(`<img class="img-flash mx-auto d-block" src="image/${animal[i]}.png">`);
+        deck.push(`<img class="img-flash mx-auto d-block" src="image/${animal[i]}.svg">`);
+        deck.push(`<img class="img-flash mx-auto d-block" src="image/${animal[i]}.svg">`);
       }
       break;
 
     case 'animals 2':
       for (let i = 10; i < 20; i++){
-        deck.push(`<img class="img-flash mx-auto d-block" src="image/${animal[i]}.png">`);
-        deck.push(`<img class="img-flash mx-auto d-block" src="image/${animal[i]}.png">`);
+        deck.push(`<img class="img-flash mx-auto d-block" src="image/${animal[i]}.svg">`);
+        deck.push(`<img class="img-flash mx-auto d-block" src="image/${animal[i]}.svg">`);
       }
       break;
 
@@ -180,9 +180,9 @@ function setBacks(d){ // SET BACKS FOR SELECTED DECK
     case 'letters 1':
       for (var i = 0; i < 10; i++){
         backContent.push('<img class="img-flash mx-auto d-block" \
-                               src="image/' + animal[i] + '.png">');
+                               src="image/' + animal[i] + '.svg">');
         backContent.push('<img class="img-flash mx-auto d-block" \
-                               src="image/' + animal[i + 10] + '.png">');
+                               src="image/' + animal[i + 10] + '.svg">');
         backClass.push('alert-primary');
         backClass.push('alert-primary');
       }
@@ -191,8 +191,7 @@ function setBacks(d){ // SET BACKS FOR SELECTED DECK
 
     case 'letters 2':
       for (var i = 0; i < vocab.length; i++){
-        backContent.push('<img class="img-flash mx-auto d-block" \
-                               src="image/' + vocab[i] + '.png">');
+        backContent.push('<img class="img-flash" src="image/' + vocab[i] + '.svg">');
         backClass.push('alert-primary');
       }
       parallelShuffle(deck, backContent);
